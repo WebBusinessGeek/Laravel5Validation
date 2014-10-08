@@ -7,6 +7,11 @@
 
 	<h1> Create a new todo </h1>
 
+	@if(Session::has('errors'))
+		@foreach( $error = Session::get('errors')->all() as $error )
+			<h5>{{$error}}</h5>
+		@endforeach
+	@endif
 
 
 	{!! Form::open(['route' => 'todo.store']) !!}

@@ -17,6 +17,11 @@
       
       <h1>Laravel 5 Validation ToDo app</h1>
 
+      @if(!Request::is('todo/create'))
+        <a href="/todo/create" class="btn btn-success">create new todo</a>
+      @endif
+     
+
         @yield('content')
 
 
