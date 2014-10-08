@@ -31,7 +31,7 @@ class TodoController {
 	 */
 	public function store(CreateTodoRequest $createTodoRequest)
 	{
-		return 'stored!';
+		return $createTodoRequest->all();
 	}
 
 	/**
