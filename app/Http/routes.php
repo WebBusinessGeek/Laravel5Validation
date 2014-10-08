@@ -12,3 +12,5 @@
 */
 
 $router->get('/', 'HomeController@index');
+
+Route::resource('todo', 'TodoController');
